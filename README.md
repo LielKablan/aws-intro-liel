@@ -9,7 +9,7 @@ A complete cloud migration project on Amazon Web Services (AWS): transitioning f
 
 ---
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 1. **Frontend (Static Hosting):** HTML page hosted publicly on **Amazon S3**.
 2. **Backend (Serverless Logic):** Python **AWS Lambda** function triggered via **Function URL**.
 3. **Database (NoSQL):** **Amazon DynamoDB** table (`visitor-counter`) maintaining an atomic live visitor count.
@@ -17,7 +17,7 @@ A complete cloud migration project on Amazon Web Services (AWS): transitioning f
 
 ---
 
-## 📸 Screenshots & Evidence
+## Screenshots & Evidence
 
 ### Phase 1: Secured Account (MFA & IAM)
 ![01-iam-mfa](screenshots/01-iam-mfa.png)
@@ -26,17 +26,17 @@ A complete cloud migration project on Amazon Web Services (AWS): transitioning f
 ![02-ec2-page](screenshots/02-ec2-page.png)
 
 ### Phase 3: SSH Diagnostic & Nginx Status
-![03-ec2-terminal](screenshots/03-ec2-ssh.png)
+![03-ec2-terminal](screenshots/03-ec2-terminal.png)
 
 ### Phase 4: Serverless Live Visitor Counter on S3
-![04-s3-site](screenshots/04-s3-site.png)
+![04-site-counter](screenshots/04-site-counter.png)
 
 ### Phase 5: Decommissioned Legacy Server (EC2 Terminated)
 ![05-ec2-terminated](screenshots/05-ec2-terminated.png)
 
 ---
 
-## ✍️ Key Takeaways & Reflection
+## Key Takeaways & Reflection
 
 1. **What Surprised Me Most:** What surprised me most was learning how websites actually work behind the scenes in the cloud, and how easy it was to host the site on S3.
 2. **EC2 vs. Lambda in My Own Words:** In my own words, EC2 is like a whole computer running 24/7 that I have to manage, while Lambda is just code that wakes up for a second only when someone visits the site.
