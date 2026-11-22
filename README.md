@@ -17,6 +17,19 @@ A complete cloud migration project on Amazon Web Services (AWS): transitioning f
 
 ---
 
+## Serverless Architecture Diagram
+
+```mermaid
+flowchart TD
+    User([Visitor Browser]) -->|1. HTTP GET index.html| S3[Amazon S3 - Static Hosting]
+    User -->|2. fetch HTTPS request| LambdaURL[AWS Lambda Function URL]
+    LambdaURL --> Lambda[AWS Lambda - Python Code]
+    Lambda -->|3. Atomic ADD +1| DynamoDB[(Amazon DynamoDB - visitor-counter)]
+    IAM[IAM Role - Least Privilege] -.->|Permits UpdateItem only| Lambda
+```
+
+---
+
 ## Screenshots & Evidence
 
 ### Phase 1: Secured Account (MFA & IAM)
@@ -41,3 +54,14 @@ A complete cloud migration project on Amazon Web Services (AWS): transitioning f
 1. **What Surprised Me Most:** What surprised me most was learning how websites actually work behind the scenes in the cloud, and how easy it was to host the site on S3.
 2. **EC2 vs. Lambda in My Own Words:** In my own words, EC2 is like a whole computer running 24/7 that I have to manage, while Lambda is just code that wakes up for a second only when someone visits the site.
 3. **Question for the Session:** What happens to the performance and costs if a million people visit the site all at once?
+
+---
+
+## EC2 vs. AWS Lambda Comparison
+
+| Feature | Amazon EC2 (Virtual Server) | AWS Lambda (Serverless) |
+| :--- | :--- | :--- |
+| **What I Managed** | Full Linux OS, `nginx` web server, and firewall ports (Security Group) | Only the Python function code (`lambda_function.py`) |
+| **Pricing Model** | Pay continuously for every hour the server is running, even with 0 visitors | Pay-per-use: charged only for the milliseconds the code runs when someone visits |
+| **Security Updates** | **My responsibility** to patch and update the OS (`Shared Responsibility`) | **AWS's responsibility** to manage and patch the underlying infrastructure |
+| **Handling Traffic Spikes** | Single `t3.micro` server has fixed resources and can crash under heavy load | Automatically scales out in parallel for each incoming request |
