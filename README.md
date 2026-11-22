@@ -32,19 +32,19 @@ flowchart TD
 
 ## Screenshots & Evidence
 
-### Phase 1: Secured Account (MFA & IAM)
+##### Phase 1: Secured Account (MFA & IAM)
 ![01-iam-mfa](screenshots/01-iam-mfa.png)
 
-### Phase 2: Nginx Web Server on EC2
+##### Phase 2: Nginx Web Server on EC2
 ![02-ec2-page](screenshots/02-ec2-page.png)
 
-### Phase 3: SSH Diagnostic & Nginx Status
-![03-ec2-terminal](screenshots/03-ec2-terminal.png)
+##### Phase 3: SSH Diagnostic & Nginx Status
+![03-ec2-ssh](screenshots/03-ec2-ssh.png)
 
-### Phase 4: Serverless Live Visitor Counter on S3
-![04-site-counter](screenshots/04-site-counter.png)
+##### Phase 4: Serverless Live Visitor Counter on S3
+![04-s3-site](screenshots/04-s3-site.png)
 
-### Phase 5: Decommissioned Legacy Server (EC2 Terminated)
+##### Phase 5: Decommissioned Legacy Server (EC2 Terminated)
 ![05-ec2-terminated](screenshots/05-ec2-terminated.png)
 
 ---
