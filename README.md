@@ -39,10 +39,10 @@ flowchart TD
 ![02-ec2-page](screenshots/02-ec2-page.png)
 
 ##### Phase 3: SSH Diagnostic & Nginx Status
-![03-ec2-ssh](screenshots/03-ec2-ssh.png)
+![03-ec2-terminal](screenshots/03-ec2-terminal.png)
 
 ##### Phase 4: Serverless Live Visitor Counter on S3
-![04-s3-site](screenshots/04-s3-site.png)
+![04-site-counter](screenshots/04-site-counter.png)
 
 ##### Phase 5: Decommissioned Legacy Server (EC2 Terminated)
 ![05-ec2-terminated](screenshots/05-ec2-terminated.png)
