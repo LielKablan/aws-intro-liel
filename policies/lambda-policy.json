@@ -1,0 +1,10 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Action": "dynamodb:UpdateItem",
+			"Resource": "arn:aws:dynamodb:eu-north-1:230944684520:table/visitor-counter"
+		}
+	]
+}
