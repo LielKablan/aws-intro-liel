@@ -38,6 +38,6 @@ A complete cloud migration project on Amazon Web Services (AWS): transitioning f
 
 ## ✍️ Key Takeaways & Reflection
 
-1. **What Surprised Me Most:** I was surprised by how quickly and seamlessly a fully event-driven, serverless architecture can be deployed compared to the time, manual configuration, and maintenance required for a standalone virtual server.
-2. **EC2 vs. Lambda in My Own Words:** With EC2, you rent a dedicated virtual machine and are responsible for OS management, security patches, and 24/7 running costs. With Lambda, you only bring your code—AWS manages the underlying infrastructure and scales automatically on demand.
-3. **Question for the Session:** What are the industry best practices for version control, continuous integration/deployment (CI/CD), and environment management in multi-user Serverless environments?
+1. **What Surprised Me Most:** What surprised me most was learning how websites actually work behind the scenes in the cloud, and how easy it was to host the site on S3.
+2. **EC2 vs. Lambda in My Own Words:** In my own words, EC2 is like a whole computer running 24/7 that I have to manage, while Lambda is just code that wakes up for a second only when someone visits the site.
+3. **Question for the Session:** What happens to the performance and costs if a million people visit the site all at once?
